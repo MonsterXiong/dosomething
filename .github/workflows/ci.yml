@@ -16,9 +16,9 @@ jobs:
 
       - name: Auto green
         run: |
-          git config --local user.email "justjavac@gmail.com"
-          git config --local user.name "迷渡"
-          git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git config --local user.email "liuxiongcheng9774@gmail.com"
+          git config --local user.name "monster-liu"
+          git remote set-url origin https://${{secrets.DEPLOY_KEY}}@github.com/MonsterXiong/auto-commit.git
           git pull --rebase
           git commit --allow-empty -m "a commit a day keeps your girlfriend away"
           git push
